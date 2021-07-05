@@ -117,12 +117,68 @@ children:
       - type: User
         attributes: {value: DIGITAL}
   - type: String
+    attributes: {id: BSP_PIN_27_FUNCTION_NAME}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: BREAK_LIGHT_CTRL}
+  - type: String
+    attributes: {id: BSP_PIN_27_FUNCTION_TYPE}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: GPIO}
+  - type: String
     attributes: {id: BSP_PIN_27_MODE}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: ''}
+        attributes: {value: DIGITAL}
+  - type: String
+    attributes: {id: BSP_PIN_27_PD}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: 'True'}
+  - type: String
+    attributes: {id: BSP_PIN_28_DIR}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: Out}
+  - type: String
+    attributes: {id: BSP_PIN_28_FUNCTION_NAME}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: K_INVERTER}
+  - type: String
+    attributes: {id: BSP_PIN_28_FUNCTION_TYPE}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: GPIO}
+  - type: String
+    attributes: {id: BSP_PIN_28_MODE}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: DIGITAL}
+  - type: String
+    attributes: {id: BSP_PIN_29_DIR}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: Out}
   - type: String
     attributes: {id: BSP_PIN_29_FUNCTION_NAME}
     children:
@@ -145,12 +201,40 @@ children:
       - type: User
         attributes: {value: DIGITAL}
   - type: String
+    attributes: {id: BSP_PIN_32_DIR}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: Out}
+  - type: String
     attributes: {id: BSP_PIN_32_FUNCTION_NAME}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: K_BOMBA_2}
+        attributes: {value: K_BOMB_2}
+  - type: String
+    attributes: {id: BSP_PIN_32_FUNCTION_TYPE}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: GPIO}
+  - type: String
+    attributes: {id: BSP_PIN_32_MODE}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: DIGITAL}
+  - type: String
+    attributes: {id: BSP_PIN_34_DIR}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: Out}
   - type: String
     attributes: {id: BSP_PIN_34_FUNCTION_NAME}
     children:
@@ -341,6 +425,13 @@ children:
       - type: User
         attributes: {value: BMS_STATUS}
   - type: String
+    attributes: {id: BSP_PIN_71_FUNCTION_TYPE}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: GPIO}
+  - type: String
     attributes: {id: BSP_PIN_71_MODE}
     children:
     - type: Values
@@ -354,6 +445,13 @@ children:
       children:
       - type: User
         attributes: {value: BSPD_STATUS}
+  - type: String
+    attributes: {id: BSP_PIN_72_FUNCTION_TYPE}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: GPIO}
   - type: String
     attributes: {id: BSP_PIN_72_MODE}
     children:
@@ -613,6 +711,13 @@ children:
       children:
       - type: User
         attributes: {value: K_CTRL}
+  - type: String
+    attributes: {id: BSP_PIN_97_FUNCTION_TYPE}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: GPIO}
   - type: String
     attributes: {id: BSP_PIN_97_MODE}
     children:
@@ -1153,14 +1258,35 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: core, value: '1024'}
+        attributes: {id: core, value: '1536'}
+  - type: Hex
+    attributes: {id: SYS_PORT_A_TRIS}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '1536'}
   - type: Hex
     attributes: {id: SYS_PORT_B_ANSEL}
     children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: core, value: '1088'}
+        attributes: {id: core, value: '1472'}
+  - type: Hex
+    attributes: {id: SYS_PORT_B_CNPD}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '128'}
+  - type: Hex
+    attributes: {id: SYS_PORT_B_TRIS}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '1280'}
   - type: Hex
     attributes: {id: SYS_PORT_D_ANSEL}
     children:

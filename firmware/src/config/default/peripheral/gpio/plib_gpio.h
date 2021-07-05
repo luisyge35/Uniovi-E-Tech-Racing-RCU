@@ -66,6 +66,24 @@
 #define RTDS_PWM_Get()               ((PORTB >> 6) & 0x1)
 #define RTDS_PWM_PIN                  GPIO_PIN_RB6
 
+/*** Macros for BREAK_LIGHT_CTRL pin ***/
+#define BREAK_LIGHT_CTRL_Set()               (LATBSET = (1<<7))
+#define BREAK_LIGHT_CTRL_Clear()             (LATBCLR = (1<<7))
+#define BREAK_LIGHT_CTRL_Toggle()            (LATBINV= (1<<7))
+#define BREAK_LIGHT_CTRL_OutputEnable()      (TRISBCLR = (1<<7))
+#define BREAK_LIGHT_CTRL_InputEnable()       (TRISBSET = (1<<7))
+#define BREAK_LIGHT_CTRL_Get()               ((PORTB >> 7) & 0x1)
+#define BREAK_LIGHT_CTRL_PIN                  GPIO_PIN_RB7
+
+/*** Macros for K_INVERTER pin ***/
+#define K_INVERTER_Set()               (LATASET = (1<<9))
+#define K_INVERTER_Clear()             (LATACLR = (1<<9))
+#define K_INVERTER_Toggle()            (LATAINV= (1<<9))
+#define K_INVERTER_OutputEnable()      (TRISACLR = (1<<9))
+#define K_INVERTER_InputEnable()       (TRISASET = (1<<9))
+#define K_INVERTER_Get()               ((PORTA >> 9) & 0x1)
+#define K_INVERTER_PIN                  GPIO_PIN_RA9
+
 /*** Macros for K_BREAK_LIGHT pin ***/
 #define K_BREAK_LIGHT_Set()               (LATASET = (1<<10))
 #define K_BREAK_LIGHT_Clear()             (LATACLR = (1<<10))
@@ -74,6 +92,15 @@
 #define K_BREAK_LIGHT_InputEnable()       (TRISASET = (1<<10))
 #define K_BREAK_LIGHT_Get()               ((PORTA >> 10) & 0x1)
 #define K_BREAK_LIGHT_PIN                  GPIO_PIN_RA10
+
+/*** Macros for K_BOMB_2 pin ***/
+#define K_BOMB_2_Set()               (LATBSET = (1<<8))
+#define K_BOMB_2_Clear()             (LATBCLR = (1<<8))
+#define K_BOMB_2_Toggle()            (LATBINV= (1<<8))
+#define K_BOMB_2_OutputEnable()      (TRISBCLR = (1<<8))
+#define K_BOMB_2_InputEnable()       (TRISBSET = (1<<8))
+#define K_BOMB_2_Get()               ((PORTB >> 8) & 0x1)
+#define K_BOMB_2_PIN                  GPIO_PIN_RB8
 
 /*** Macros for K_BMS pin ***/
 #define K_BMS_Set()               (LATBSET = (1<<10))
@@ -96,6 +123,24 @@
 #define STBY_InputEnable()       (TRISDSET = (1<<15))
 #define STBY_Get()               ((PORTD >> 15) & 0x1)
 #define STBY_PIN                  GPIO_PIN_RD15
+
+/*** Macros for BMS_STATUS pin ***/
+#define BMS_STATUS_Set()               (LATDSET = (1<<11))
+#define BMS_STATUS_Clear()             (LATDCLR = (1<<11))
+#define BMS_STATUS_Toggle()            (LATDINV= (1<<11))
+#define BMS_STATUS_OutputEnable()      (TRISDCLR = (1<<11))
+#define BMS_STATUS_InputEnable()       (TRISDSET = (1<<11))
+#define BMS_STATUS_Get()               ((PORTD >> 11) & 0x1)
+#define BMS_STATUS_PIN                  GPIO_PIN_RD11
+
+/*** Macros for BSPD_STATUS pin ***/
+#define BSPD_STATUS_Set()               (LATDSET = (1<<0))
+#define BSPD_STATUS_Clear()             (LATDCLR = (1<<0))
+#define BSPD_STATUS_Toggle()            (LATDINV= (1<<0))
+#define BSPD_STATUS_OutputEnable()      (TRISDCLR = (1<<0))
+#define BSPD_STATUS_InputEnable()       (TRISDSET = (1<<0))
+#define BSPD_STATUS_Get()               ((PORTD >> 0) & 0x1)
+#define BSPD_STATUS_PIN                  GPIO_PIN_RD0
 
 /*** Macros for BOTS_STATUS pin ***/
 #define BOTS_STATUS_Set()               (LATCSET = (1<<13))
@@ -177,6 +222,15 @@
 #define INTERLOCKS_STATUS_InputEnable()       (TRISGSET = (1<<12))
 #define INTERLOCKS_STATUS_Get()               ((PORTG >> 12) & 0x1)
 #define INTERLOCKS_STATUS_PIN                  GPIO_PIN_RG12
+
+/*** Macros for K_CTRL pin ***/
+#define K_CTRL_Set()               (LATGSET = (1<<13))
+#define K_CTRL_Clear()             (LATGCLR = (1<<13))
+#define K_CTRL_Toggle()            (LATGINV= (1<<13))
+#define K_CTRL_OutputEnable()      (TRISGCLR = (1<<13))
+#define K_CTRL_InputEnable()       (TRISGSET = (1<<13))
+#define K_CTRL_Get()               ((PORTG >> 13) & 0x1)
+#define K_CTRL_PIN                  GPIO_PIN_RG13
 
 /*** Macros for K_SDC pin ***/
 #define K_SDC_Set()               (LATESET = (1<<2))

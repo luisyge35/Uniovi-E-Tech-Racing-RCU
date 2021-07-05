@@ -158,9 +158,9 @@ void SYS_Initialize ( void* data )
 	GPIO_Initialize();
 
     CORETIMER_Initialize();
-    CAN1_Initialize();
-
     TMR2_Initialize();
+
+    CAN1_Initialize();
 
     ADC_Initialize();
 

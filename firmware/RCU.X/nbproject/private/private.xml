@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/luisyge/FormulaStudent/RearControlUnit/firmware/src/config/default/definitions.h</file>
+            <file>file:/home/luisyge/FormulaStudent/RearControlUnit/firmware/src/libs/PowerDistribution/PowerDistribution.c</file>
+            <file>file:/home/luisyge/FormulaStudent/RearControlUnit/firmware/src/libs/SDC/SDC.h</file>
+            <file>file:/home/luisyge/FormulaStudent/RearControlUnit/firmware/src/config/default/peripheral/coretimer/plib_coretimer.h</file>
+            <file>file:/home/luisyge/FormulaStudent/RearControlUnit/firmware/src/libs/PowerDistribution/PowerDistribution.h</file>
+            <file>file:/home/luisyge/FormulaStudent/RearControlUnit/firmware/src/main.c</file>
+            <file>file:/home/luisyge/FormulaStudent/RearControlUnit/firmware/src/libs/TaskMgr/TaskMgr.c</file>
+            <file>file:/home/luisyge/FormulaStudent/RearControlUnit/firmware/src/libs/SDC/SDC.c</file>
+            <file>file:/home/luisyge/FormulaStudent/RearControlUnit/firmware/src/libs/TaskMgr/TaskMgr.h</file>
+        </group>
     </open-files>
 </project-private>
